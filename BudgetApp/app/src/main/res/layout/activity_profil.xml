@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfilActivity">
+
+        <!-- Toolbar som skal brukes andre steder-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profiltoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txtProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_user_placeholder"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginEnd="143dp"
+            android:src="@drawable/fallout"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/income_month"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProfilIncome"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/save_month"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProfilSave"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/monthly_expenses"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProfilMonthlyEx"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/categories_to_save_on"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtProfilCategories"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtC1"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSL1"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtC2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSL2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtC3"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSL3"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtC4"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtSL4"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Not added"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+
+    </TableLayout>
+</ScrollView>
+
+
+    <include
+        layout="@layout/side_bar_overview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_overview"
+        app:menu="@menu/menu_overview" />
+
+</android.support.v4.widget.DrawerLayout>

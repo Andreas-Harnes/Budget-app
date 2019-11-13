@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/profilSettingsBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProfilActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/profiltoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+        </android.support.v7.widget.Toolbar>
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="Profile settings"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/txtV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Income per month"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp">
+            <EditText
+                android:id="@+id/txtProfilSettingsIncome"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:hint="Income"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:layout_span="1"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/txtV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Savings per month"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp">
+            <EditText
+                android:id="@+id/txtProfilSettingsSave"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:hint="Savings"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:layout_span="1"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/txtV3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fixed expenses per month"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_span="1" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp">
+            <EditText
+                android:id="@+id/txtProfilSettingsMonthlyEx"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:hint="Monthly expenses"
+                android:inputType="number"
+                android:textSize="18sp"
+                android:layout_span="1"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:text="Categories I want to save on"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp">
+
+            <Spinner
+                android:id="@+id/drpSettingsCat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:layout_span="1" />
+
+            <Button
+                android:id="@+id/btnAddCatSettings"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_span="1"
+                android:text="Choose" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtProfilSettingsCategories"
+                android:layout_width="354dp"
+                android:layout_height="62dp"
+                android:layout_span="2"
+                android:ellipsize="none"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:scrollHorizontally="false"
+                android:text="No categories chosen"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp">
+            <TextView
+                android:id="@+id/txtSpendingLimitText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spending limit on these categories:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtCat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txtLimit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Total"
+                android:inputType="number"
+                android:visibility="gone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtCat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txtLimit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Total"
+                android:inputType="number"
+                android:visibility="gone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtCat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txtLimit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Total"
+                android:inputType="number"
+                android:visibility="gone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/txtCat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txtLimit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Total"
+                android:inputType="number"
+                android:visibility="gone"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="10dp">
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_changes"
+                android:layout_span="2"
+                android:layout_gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_input_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/add_expense"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/numPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Sum"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtDatePicker"
+        app:layout_constraintStart_toStartOf="@+id/txtDatePicker"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeadline" />
+
+    <EditText
+        android:id="@+id/txtLocation"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/where"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+        app:layout_constraintStart_toStartOf="@+id/txtDescription"
+        app:layout_constraintTop_toBottomOf="@+id/txtDatePicker" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toTopOf="@+id/drpCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+    <Spinner
+        android:id="@+id/drpCategory"
+        android:layout_width="189dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddCategory"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        android:text="Add new"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/drpCategory" />
+
+    <TextView
+        android:id="@+id/txtHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_expense"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/numPrice"
+        app:layout_constraintEnd_toEndOf="@+id/numPrice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/numPrice"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/txtDatePicker"
+        android:layout_width="112dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:text="00/00/00"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLocation"
+        app:layout_constraintStart_toStartOf="@+id/txtLocation"
+        app:layout_constraintTop_toBottomOf="@+id/numPrice" />
+
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:text=" change"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDatePicker"
+        app:layout_constraintEnd_toEndOf="@+id/txtLocation" />
+
+</android.support.constraint.ConstraintLayout>
